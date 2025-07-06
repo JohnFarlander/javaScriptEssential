@@ -45,19 +45,21 @@ body {
 }
 
 .hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?travel,landscape');
+    background-image: url('Wallpaper.jpeg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full screen height */
+    position: relative;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    padding: 0 1rem;
-    position: relative;
+    padding: 20px;
 }
+
 
 .search-container {
     width: 100%;
