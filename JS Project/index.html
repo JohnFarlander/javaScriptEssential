@@ -15,28 +15,35 @@
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
         </div>
+        <div class="search-container-nav">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search destinations...">
+                <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                <button type="button" id="clearButton">Clear</button>
+            </div>
+        </div>
     </nav>
 
     <header class="hero">
-        <div class="search-container">
-            <div class="search-bar">
-                <input type="text" placeholder="Search destinations...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
+        <div class="search-results" id="searchResults">
+            <!-- Results will be dynamically inserted here -->
         </div>
+        
         <div class="hero-content">
-            <h1>Discover Your Next Adventure</h1>
-            <p>Explore breathtaking destinations and immerse yourself in diverse cultures around the world.</p>
+            <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
             <button class="cta-button">Book Now</button>
         </div>
+        
         <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
     </header>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

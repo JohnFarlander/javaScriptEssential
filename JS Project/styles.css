@@ -45,21 +45,19 @@ body {
 }
 
 .hero {
-    background-image: url('Wallpaper.jpeg');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?travel,landscape');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full screen height */
-    position: relative;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    color: white;
+    padding: 0 1rem;
+    position: relative;
 }
-
 
 .search-container {
     width: 100%;
@@ -67,24 +65,30 @@ body {
     margin-bottom: 2rem;
 }
 
+.search-container-nav {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+}
+
 .search-bar {
     display: flex;
     background: white;
     border-radius: 50px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input {
     flex: 1;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     border: none;
     outline: none;
     font-size: 1rem;
 }
 
 .search-bar button {
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     background: #3498db;
     border: none;
     color: white;
@@ -92,8 +96,16 @@ body {
     transition: background 0.3s ease;
 }
 
+#clearButton {
+    background: #e74c3c;
+}
+
 .search-bar button:hover {
     background: #2980b9;
+}
+
+#clearButton:hover {
+    background: #c0392b;
 }
 
 .hero-content {
@@ -187,7 +199,6 @@ body {
 }
 
 .content-wrapper {
-    background-image: url('Wallpaper.jpeg');
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -352,4 +363,75 @@ body {
     .content-wrapper {
         padding: 1rem;
     }
+}
+
+/* Search Results */
+.search-results {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.result-card {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result-card:last-child {
+    border-bottom: none;
+}
+
+.local-time {
+    background: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.destination-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.destination-info h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.destination-info p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.visit-button:hover {
+    background: #2980b9;
 } 
