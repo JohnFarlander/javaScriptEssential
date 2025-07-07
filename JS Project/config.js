@@ -3,3 +3,14 @@ const config = {
     TIMEZONEDB_API_KEY: 'SP84H24XZHOQ', // Get from https://timezonedb.com/
     UNSPLASH_API_KEY: '_cnx4B2hEHEf0d9Qz2T2xlc9wvYLo07uPiir3D1z5OM' // Get from https://unsplash.com/developers
 }; 
+
+(function validateConfig() {
+    const apiError = document.getElementById('apiError');
+    if (apiError) {
+        if (!config.OPENCAGE_API_KEY || config.OPENCAGE_API_KEY === '4510ad066c89455e9e4e2b1a2bb4fc6a' ||
+            !config.TIMEZONEDB_API_KEY || config.TIMEZONEDB_API_KEY === 'SP84H24XZHOQ' ||
+            !config.UNSPLASH_API_KEY || config.UNSPLASH_API_KEY === '_cnx4B2hEHEf0d9Qz2T2xlc9wvYLo07uPiir3D1z5OM') {
+            apiError.style.display = 'block';
+        }
+    }
+})(); 
