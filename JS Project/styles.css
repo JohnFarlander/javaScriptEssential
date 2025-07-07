@@ -187,6 +187,7 @@ body {
 }
 
 .content-wrapper {
+    background-image: url('Wallpaper.jpeg');
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -195,7 +196,6 @@ body {
 
 /* About Page Styles */
 .about-content {
-    background-image: url('Wallpaper.jpeg');
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border-radius: 10px;
